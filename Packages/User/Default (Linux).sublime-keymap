@@ -1,0 +1,4 @@
+[
+    { "keys": ["ctrl+d"], "command": "diff_views_mark" },
+    { "keys": ["ctrl+shift+d"], "command": "diff_views_execute" }
+]

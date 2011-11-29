@@ -1,0 +1,8 @@
+{
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vim"
+	],
+	"show_tab_close_buttons": false
+}
