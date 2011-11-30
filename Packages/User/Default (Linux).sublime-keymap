@@ -1,4 +1,39 @@
 [
     { "keys": ["ctrl+d"], "command": "diff_views_mark" },
-    { "keys": ["ctrl+shift+d"], "command": "diff_views_execute" }
+    { "keys": ["ctrl+shift+d"], "command": "diff_views_execute" },
+    {
+        "command": "navigate_to_definition",
+        "context": [],
+        "keys": [
+            "shift+alt+d"
+        ]
+    },
+    {
+        "command": "rebuild_tags",
+        "context": [],
+        "keys": [
+            "shift+alt+r"
+        ]
+    },
+    {
+        "command": "show_symbols",
+        "context": [
+            {
+                "key": "selector",
+                "match_all": true,
+                "operand": "source -source.css",
+                "operator": "equal"
+            }
+        ],
+        "keys": [
+            "shift+alt+s"
+        ]
+    },
+    { "keys": ["shift+tab"], "command": "auto_complete" },
+    { "keys": ["shift+tab"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    }
 ]
